@@ -15,11 +15,11 @@
 <body>
     <!-- Navbar -->
     <section class="p-4">
-        <div
-          class="flex flex-row items-center pad-80   px-[120px] h-[90px] justify-between rounded-[10px] bg-primary"
-        >
+      <div
+      class="flex flex-row items-center px-[120px] relative pad-80 mobile-pad-nav h-[90px] justify-between rounded-[10px] bg-primary"
+    >
           <div>
-            <img src="./assets/logo.png" alt="Emveebee logo" />
+            <img src="./assets/logo.png" class="mobile-logo" alt="Emveebee logo" />
           </div>
           <nav class="flex flex-row items-center w-1/2 justify-between text-green-100">
             <a
@@ -40,6 +40,41 @@
               >CONTACT</a
             >
           </nav>
+          <div class="ham-icon hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <rect x="-0.000732422" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
+              <rect x="-0.000732422" y="6" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
+              <rect x="-0.000732422" y="12" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
+            </svg>
+            
+          </div>
+          <div class="shadow-[4px_6px_0px_#0f0f0f] z-10 ham-menu hidden absolute right-10 top-10 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
+            <div class="p-[30px] border-[3px] relative rounded-[15px] "> 
+              <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-2 right-0" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <circle cx="13" cy="13" r="12.5" fill="white" stroke="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39646 6.08713C8.2793 5.96997 8.08935 5.96997 7.97219 6.08713L6.08797 7.97136C5.97081 8.08852 5.97081 8.27847 6.08797 8.39562L10.6405 12.9481L6.2363 17.3523C6.11914 17.4695 6.11914 17.6594 6.2363 17.7766L8.12053 19.6608C8.23769 19.778 8.42764 19.778 8.54479 19.6608L12.949 15.2566L17.2062 19.5138C17.3233 19.631 17.5133 19.631 17.6304 19.5138L19.5147 17.6296C19.6318 17.5124 19.6318 17.3225 19.5147 17.2053L15.2575 12.9481L19.663 8.54262C19.7801 8.42546 19.7801 8.23551 19.663 8.11835L17.7788 6.23412C17.6616 6.11697 17.4717 6.11697 17.3545 6.23412L12.949 10.6396L8.39646 6.08713Z" fill="#9D9C9C"/>
+              </svg>
+             <ul class="list-none">
+              <li class="text-center pb-2"> <a
+                class="text-lg text-primary"
+                href="index.html"
+                >HOME</a
+              ></li>
+              <li class="text-center pb-2"> <a class="text-lg text-primary" href="aboutus.html"
+                >ABOUT US</a
+              ></li>
+              <li class="text-center pb-2"> <a class="text-lg text-primary bordered-2 border-2  rounded-full  px-3 py-1" href="works.html"
+                >WORKS</a
+              ></li>
+              <li class="text-center pb-2"><a class="text-lg text-primary" href="channels.html"
+                >CHANNELS</a
+              ></li>
+              <li class="text-center pb-2"><a class="text-lg text-primary" href="channels.html"
+                >CONTACT</a
+              ></li>
+             </ul>
+            </div>
+            </div>
         </div>
       </section>
       <!-- Hero -->
@@ -56,23 +91,23 @@
               </svg>
           </div>
   
-          <div class="px-[120px] pad-80 flex h-full items-center">
-            <div class="w-4/5">
-              <h1 class="text-5xl font-poppins font-bold line-height-[62px]">
+          <div class="px-[120px] padding-40 pad-80  flex h-full items-center">
+            <div class="w-4/5 full-width">
+              <h1 class="text-5xl font-poppins font-bold line-height-[62px] mobile-hero-title">
                 Crafting Media Experiences, Together
               </h1>
-              <p class="font-poppins py-5">
+              <p class="font-poppins py-5 mobile-hero-body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim .
               </p>
               <button
-                class="font-poppins text-lg border shadow-[2px_4px_0px_#0f0f0f] rounded-full border-primary py-2 px-7"
+                class="font-poppins mobile-hero-btn text-lg border shadow-[2px_4px_0px_#0f0f0f] rounded-full border-primary py-2 px-7"
               >
                 Collaborate
               </button>
             </div>
-            <div class="w-1/2"></div>
+            <div class="w-1/2 no-design"></div>
           </div>
         </div>
       </section>
@@ -91,17 +126,17 @@
           </div>
             
            
-  <div class='px-[120px] pad-80 flex flex-row items-center gap-16 justify-between width-80 w-[70%]'>
-         <div class='text-neutral'>
-          <h3 class='text-4xl font-bold pb-[20px]'>Why partner with us?</h3>
-          <p class='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+          <div class=' px-[120px] padding-y-30 padding-40 full-width pad-80 width-80 flex flex-row items-center gap-16 justify-between w-[70%]'>
+                    <div class='text-neutral'>
+          <h3 class='text-4xl font-bold pb-[20px] mobile-hero-title'>Why partner with us?</h3>
+          <p class='text-lg mobile-hero-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
       </div>
   </div>
         </div>
         
       </section>
       <!-- Works Section -->
-      <section class="px-[120px] pad-80-both py-[80px] bg-light-gray">
+      <section class="px-[120px] padding-40 pad-80-both py-[80px] bg-light-gray">
         <div class="rounded-[10px] bg-primary flex flex-row justify-between font-poppins gap-2 p-5">
           <div class="film-btn border-2 border-neutral w-full font-14  rounded-md text-primary bg-neutral text-lg font-semibold p-2 text-center">Film</div>
           <div class="ott-btn border-2 border-neutral w-full font-14  rounded-md text-neutral text-lg font-semibold p-2 text-center">OTT</div>
@@ -121,7 +156,7 @@
                 <div class="flex flex-col gap-[15px] w-3/5   ">
                   <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                     <div class="p-[30px] border-[3px] rounded-[15px] bg-[url('./assets/popcorn-bg.png')] bg-no-repeat bg-[right_2rem_bottom]"> 
-                      <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                      <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                       <p class="text-lg pb-5">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                       </p>
@@ -244,19 +279,19 @@
             <div class="hidden show-it-tab flex flex-col gap-[15px]">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px] "> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
-                  <p class="text-base pb-5">
+                  <h5 class="font-bold  text-2xl pb-5 mobile-hero-title">Name goes Here</h5>
+                  <p class="text-base pb-5 mobile-hero-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
-                  <button class="text-base py-2 px-8 font-medium rounded-full border-2">
+                  <button class="text-base mobile-hero-btn py-2 px-8 font-medium rounded-full border-2">
                       Watch Trailer
                   </button>
 
                 </div>
               
               </div>
-              <div class="flex flex-row gap-[15px]">
-                  <div class="flex flex-col gap-[15px] w-2/5 ">
+              <div class="flex flex-row flex-it-column gap-[15px]">
+                  <div class="flex flex-col gap-[15px] w-2/5 full-width ">
                     <div class="shadow-[4px_6px_0px_#0f0f0f] p-4 border-[3px]  bg-neutral border-primary rounded-[20px]">
                       <img src="./assets/poster-2.png" alt="" />
                     </div>
@@ -371,14 +406,14 @@
           
           <!-- OTT Section -->
           <div class="ott-section hidden">
-            <div class="flex flex-row gap-[15px]">
-              <div class="shadow-[4px_6px_0px_#0f0f0f] p-4 border-[3px] w-2/6 bg-neutral border-primary rounded-[20px]">
-                <div class="bg-gray w-full h-full rounded-[5px]"></div>
+            <div class="flex flex-row flex-it-column gap-[15px]">
+              <div class="shadow-[4px_6px_0px_#0f0f0f] p-4 border-[3px] w-2/6 bg-neutral border-primary rounded-[20px] full-width">
+                <div class="bg-gray w-full h-full work-card rounded-[5px]"></div>
             </div>
-            <div class="flex flex-col gap-[15px] w-4/6   ">
+            <div class="flex flex-col gap-[15px] w-4/6 full-width  ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -393,14 +428,14 @@
            </div>
 
             </div>
-            <div class="flex flex-row pt-[15px] gap-[15px]">
+            <div class="flex flex-row pt-[15px] flex-it-column gap-[15px]">
               <div class="shadow-[4px_6px_0px_#0f0f0f] p-4 border-[3px] w-2/6 bg-neutral border-primary rounded-[20px]">
                 <div class="bg-gray w-full h-full rounded-[5px]"></div>
             </div>
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -425,7 +460,7 @@
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -447,7 +482,7 @@
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -472,7 +507,7 @@
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -494,7 +529,7 @@
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -519,7 +554,7 @@
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -541,7 +576,7 @@
             <div class="flex flex-col gap-[15px] w-4/6   ">
               <div class="shadow-[4px_6px_0px_#0f0f0f] px-5 py-6 border-[3px] bg-neutral border-primary rounded-[20px]">
                 <div class="p-[30px] border-[3px] rounded-[15px]"> 
-                  <h5 class="font-bold  text-2xl pb-5">Name goes Here</h5>
+                  <h5 class="font-bold  mobile-hero-title text-2xl pb-5">Name goes Here</h5>
                   <p class="text-base pb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quas mollitia eum, explicabo nam, aut nemo amet, officia corrupti recusandae esse? Rem esse ipsum tempora vitae iusto recusandae culpa laborum nesciunt sapiente a labore, iste cupiditate, veniam modi officiis dolorem dicta? Dolores, in! Veniam aliquam nostrum laboriosam tempore nisi!
                   </p>
@@ -561,26 +596,26 @@
         <!-- Remove text-neutral only -->
       </section>
         <!-- Join Us Section -->
-    <section class="">
-        <div class='bg-primary h-[463px] flex justify-between items-center relative'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="233" height="463" class='absolute no-design left-0 top-0' viewBox="0 0 233 463" fill="none">
-      <path d="M-195.453 -478.595C-195.641 -482.091 -195.668 -485.616 -195.517 -489.172C-194.643 -509.655 -187.842 -529.797 -175.306 -549.046C-164.048 -566.336 -148.434 -582.199 -130.154 -594.933C-94.7965 -619.561 -53.2581 -632.479 -13.086 -644.976L134.38 -690.838C156.116 -697.599 183.165 -706.011 199.215 -726.109C222.187 -754.875 214.439 -798.187 194.912 -826.103C174.141 -855.798 141.259 -875.399 111.987 -892.635C106.204 -883.496 106.872 -870.702 113.737 -862.3L111.37 -860.363C103.362 -870.166 102.894 -885.306 110.282 -895.579L111.094 -896.712L112.296 -896.004C142.148 -878.432 175.971 -858.518 197.417 -827.858C208.215 -812.425 214.87 -793.881 216.168 -775.652C217.584 -755.691 212.551 -737.903 201.606 -724.193C184.967 -703.358 157.426 -694.792 135.293 -687.912L-12.1729 -642.05C-52.1243 -629.627 -93.4366 -616.777 -128.401 -592.421C-166.893 -565.605 -190.84 -526.962 -192.456 -489.04C-194.299 -445.856 -169.179 -406.516 -144.36 -373.727C-125.28 -348.516 -104.512 -323.913 -84.431 -300.121C-55.744 -266.14 -26.0857 -230.999 -0.812901 -193.471C22.6067 -158.69 40.3325 -123.915 51.8738 -90.1047C65.2277 -50.9844 70.3618 -12.8838 67.1276 23.142C63.6224 62.1982 50.2102 100.004 37.2416 136.563C23.0272 176.635 8.32426 218.068 6.90457 260.866C4.2443 341.06 48.8929 413.28 86.8197 459.742C93.7622 468.247 101.189 476.925 108.365 485.315C147.188 530.692 187.331 577.622 188.043 636.126C188.491 672.444 172.988 706.416 158.002 739.266C154.037 747.954 149.941 756.941 146.224 765.784C106.923 859.374 98.1417 972.15 120.838 1091.91C142.488 1206.15 189.432 1313.74 232.504 1403.92L229.746 1405.24C186.594 1314.88 139.55 1207.07 117.836 1092.48C111.84 1060.85 108.033 1029.68 106.395 999.236C101.8 913.836 114.263 833.999 143.408 764.597C147.143 755.711 151.248 746.704 155.222 737.995C170.071 705.448 185.428 671.796 184.986 636.162C184.287 578.757 144.506 532.267 106.042 487.306C98.8493 478.901 91.417 470.213 84.4525 461.679C59.0986 430.616 39.3599 398.954 25.7888 367.564C10.0831 331.233 2.70153 295.303 3.84565 260.765C5.28085 217.495 20.0633 175.834 34.3579 135.543C47.2645 99.1603 60.6102 61.5425 64.0799 22.8715C70.0984 -44.162 47.407 -116.373 -3.35027 -191.755C-28.5289 -229.145 -58.1377 -264.222 -86.7705 -298.145C-106.879 -321.971 -127.674 -346.603 -146.804 -371.878C-169.924 -402.427 -193.303 -438.636 -195.453 -478.595Z" fill="#7F7F7F"/>
-    </svg>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" width="181" height="463" class='absolute no-design right-0'  viewBox="0 0 181 463" fill="none">
-      <path d="M54.2767 139.814C54.8915 136.367 55.6704 132.928 56.6286 129.501C62.1539 109.758 73.3713 91.6996 89.97 75.8189C104.877 61.5548 123.699 49.6739 144.402 41.4467C184.447 25.5375 227.837 22.4399 269.801 19.4404L423.842 8.44209C446.547 6.81938 474.803 4.80216 495.016 -11.1028C523.946 -33.8676 526.287 -77.8046 513.646 -109.44C500.199 -143.091 472.658 -169.68 448.092 -193.14C440.375 -185.563 438.106 -172.954 442.873 -163.207L440.126 -161.861C434.566 -173.233 437.567 -188.08 447.103 -196.396L448.153 -197.313L449.162 -196.351C474.216 -172.43 502.601 -145.323 516.485 -110.577C523.476 -93.0873 525.724 -73.5137 522.827 -55.4694C519.65 -35.7122 510.691 -19.5423 496.906 -8.69182C475.952 7.79645 447.182 9.85155 424.063 11.499L270.023 22.4973C228.29 25.4759 185.136 28.5585 145.536 44.2931C101.939 61.6168 69.8056 93.7753 59.5784 130.328C47.929 171.951 63.4084 215.987 80.0895 253.574C92.9129 282.474 107.518 311.167 121.64 338.914C141.815 378.545 162.672 419.527 178.713 461.832C193.578 501.04 202.9 538.943 206.421 574.494C210.495 615.63 206.798 653.897 195.428 688.234C183.102 725.46 161.417 759.207 140.447 791.842C117.463 827.613 93.6928 864.597 82.5437 905.941C61.6527 983.412 88.642 1063.92 114.965 1117.81C119.783 1127.67 125.033 1137.82 130.106 1147.62C157.549 1200.66 185.922 1255.51 173.265 1312.64C165.413 1348.1 142.566 1377.64 120.479 1406.2C114.636 1413.75 108.597 1421.57 102.96 1429.33C43.338 1511.48 9.05225 1619.28 3.81942 1741.06C-1.17361 1857.23 19.9803 1972.69 41.336 2070.32L38.3499 2070.97C16.9553 1973.15 -4.24277 1857.45 0.766033 1740.93C2.1471 1708.76 5.55433 1677.55 10.9069 1647.53C25.9223 1563.34 56.2758 1488.45 100.49 1427.53C106.153 1419.73 112.206 1411.9 118.063 1404.33C139.948 1376.03 162.578 1346.77 170.28 1311.97C182.7 1255.92 154.578 1201.58 127.389 1149.03C122.305 1139.21 117.051 1129.05 112.218 1119.15C94.6221 1083.12 82.6297 1047.79 76.5803 1014.13C69.5799 975.177 70.5927 938.511 79.5886 905.145C90.8603 863.345 114.76 826.156 137.872 790.191C158.741 757.713 180.319 724.134 192.523 687.275C213.68 623.384 208.066 547.9 175.851 462.924C159.87 420.774 139.047 379.866 118.911 340.304C104.771 312.518 90.1455 283.79 77.2886 254.817C61.75 219.797 47.2512 179.208 54.2767 139.814Z" fill="#7F7F7F"/>
-    </svg>
-    <div class=' px-[120px] pad-80 w-4/5'>
-    <div class='text-neutral'>
-        <h3 class='text-4xl font-bold pb-[11px]'>Join Us for Coffee & Conversation</h3>
-        <p class='text-lg pb-[23px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla, </p>
-        <button class=' font-poppins bg-neutral text-primary font-medium text-lg rounded-full border-primary py-[10px] px-8'>
-                      Collaborate
-                    </button>
-    </div>
-    </div>
-        </div>
-    </section>
+        <section class="">
+          <div class='bg-primary height-max h-[463px] flex justify-between items-center relative'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="233" height="463" class='no-design absolute left-0 top-0' viewBox="0 0 233 463" fill="none">
+        <path d="M-195.453 -478.595C-195.641 -482.091 -195.668 -485.616 -195.517 -489.172C-194.643 -509.655 -187.842 -529.797 -175.306 -549.046C-164.048 -566.336 -148.434 -582.199 -130.154 -594.933C-94.7965 -619.561 -53.2581 -632.479 -13.086 -644.976L134.38 -690.838C156.116 -697.599 183.165 -706.011 199.215 -726.109C222.187 -754.875 214.439 -798.187 194.912 -826.103C174.141 -855.798 141.259 -875.399 111.987 -892.635C106.204 -883.496 106.872 -870.702 113.737 -862.3L111.37 -860.363C103.362 -870.166 102.894 -885.306 110.282 -895.579L111.094 -896.712L112.296 -896.004C142.148 -878.432 175.971 -858.518 197.417 -827.858C208.215 -812.425 214.87 -793.881 216.168 -775.652C217.584 -755.691 212.551 -737.903 201.606 -724.193C184.967 -703.358 157.426 -694.792 135.293 -687.912L-12.1729 -642.05C-52.1243 -629.627 -93.4366 -616.777 -128.401 -592.421C-166.893 -565.605 -190.84 -526.962 -192.456 -489.04C-194.299 -445.856 -169.179 -406.516 -144.36 -373.727C-125.28 -348.516 -104.512 -323.913 -84.431 -300.121C-55.744 -266.14 -26.0857 -230.999 -0.812901 -193.471C22.6067 -158.69 40.3325 -123.915 51.8738 -90.1047C65.2277 -50.9844 70.3618 -12.8838 67.1276 23.142C63.6224 62.1982 50.2102 100.004 37.2416 136.563C23.0272 176.635 8.32426 218.068 6.90457 260.866C4.2443 341.06 48.8929 413.28 86.8197 459.742C93.7622 468.247 101.189 476.925 108.365 485.315C147.188 530.692 187.331 577.622 188.043 636.126C188.491 672.444 172.988 706.416 158.002 739.266C154.037 747.954 149.941 756.941 146.224 765.784C106.923 859.374 98.1417 972.15 120.838 1091.91C142.488 1206.15 189.432 1313.74 232.504 1403.92L229.746 1405.24C186.594 1314.88 139.55 1207.07 117.836 1092.48C111.84 1060.85 108.033 1029.68 106.395 999.236C101.8 913.836 114.263 833.999 143.408 764.597C147.143 755.711 151.248 746.704 155.222 737.995C170.071 705.448 185.428 671.796 184.986 636.162C184.287 578.757 144.506 532.267 106.042 487.306C98.8493 478.901 91.417 470.213 84.4525 461.679C59.0986 430.616 39.3599 398.954 25.7888 367.564C10.0831 331.233 2.70153 295.303 3.84565 260.765C5.28085 217.495 20.0633 175.834 34.3579 135.543C47.2645 99.1603 60.6102 61.5425 64.0799 22.8715C70.0984 -44.162 47.407 -116.373 -3.35027 -191.755C-28.5289 -229.145 -58.1377 -264.222 -86.7705 -298.145C-106.879 -321.971 -127.674 -346.603 -146.804 -371.878C-169.924 -402.427 -193.303 -438.636 -195.453 -478.595Z" fill="#7F7F7F"/>
+      </svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="181" height="463" class='no-design absolute right-0'  viewBox="0 0 181 463" fill="none">
+        <path d="M54.2767 139.814C54.8915 136.367 55.6704 132.928 56.6286 129.501C62.1539 109.758 73.3713 91.6996 89.97 75.8189C104.877 61.5548 123.699 49.6739 144.402 41.4467C184.447 25.5375 227.837 22.4399 269.801 19.4404L423.842 8.44209C446.547 6.81938 474.803 4.80216 495.016 -11.1028C523.946 -33.8676 526.287 -77.8046 513.646 -109.44C500.199 -143.091 472.658 -169.68 448.092 -193.14C440.375 -185.563 438.106 -172.954 442.873 -163.207L440.126 -161.861C434.566 -173.233 437.567 -188.08 447.103 -196.396L448.153 -197.313L449.162 -196.351C474.216 -172.43 502.601 -145.323 516.485 -110.577C523.476 -93.0873 525.724 -73.5137 522.827 -55.4694C519.65 -35.7122 510.691 -19.5423 496.906 -8.69182C475.952 7.79645 447.182 9.85155 424.063 11.499L270.023 22.4973C228.29 25.4759 185.136 28.5585 145.536 44.2931C101.939 61.6168 69.8056 93.7753 59.5784 130.328C47.929 171.951 63.4084 215.987 80.0895 253.574C92.9129 282.474 107.518 311.167 121.64 338.914C141.815 378.545 162.672 419.527 178.713 461.832C193.578 501.04 202.9 538.943 206.421 574.494C210.495 615.63 206.798 653.897 195.428 688.234C183.102 725.46 161.417 759.207 140.447 791.842C117.463 827.613 93.6928 864.597 82.5437 905.941C61.6527 983.412 88.642 1063.92 114.965 1117.81C119.783 1127.67 125.033 1137.82 130.106 1147.62C157.549 1200.66 185.922 1255.51 173.265 1312.64C165.413 1348.1 142.566 1377.64 120.479 1406.2C114.636 1413.75 108.597 1421.57 102.96 1429.33C43.338 1511.48 9.05225 1619.28 3.81942 1741.06C-1.17361 1857.23 19.9803 1972.69 41.336 2070.32L38.3499 2070.97C16.9553 1973.15 -4.24277 1857.45 0.766033 1740.93C2.1471 1708.76 5.55433 1677.55 10.9069 1647.53C25.9223 1563.34 56.2758 1488.45 100.49 1427.53C106.153 1419.73 112.206 1411.9 118.063 1404.33C139.948 1376.03 162.578 1346.77 170.28 1311.97C182.7 1255.92 154.578 1201.58 127.389 1149.03C122.305 1139.21 117.051 1129.05 112.218 1119.15C94.6221 1083.12 82.6297 1047.79 76.5803 1014.13C69.5799 975.177 70.5927 938.511 79.5886 905.145C90.8603 863.345 114.76 826.156 137.872 790.191C158.741 757.713 180.319 724.134 192.523 687.275C213.68 623.384 208.066 547.9 175.851 462.924C159.87 420.774 139.047 379.866 118.911 340.304C104.771 312.518 90.1455 283.79 77.2886 254.817C61.75 219.797 47.2512 179.208 54.2767 139.814Z" fill="#7F7F7F"/>
+      </svg>
+      <div class=' px-[120px] padding-y-30 padding-40 full-width  w-4/5'>
+      <div class='text-neutral'>
+          <h3 class='text-4xl font-bold pb-[11px] mobile-hero-title'>Join Us for Coffee & Conversation</h3>
+          <p class='text-lg pb-[23px] mobile-hero-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla, </p>
+          <button class='mobile-hero-btn font-poppins bg-neutral text-primary font-medium text-lg rounded-full border-primary py-[10px] px-8'>
+                        Collaborate
+                      </button>
+      </div>
+      </div>
+          </div>
+      </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
     <script src="./script.js"></script>
 </body>

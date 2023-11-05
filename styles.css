@@ -15,6 +15,9 @@
 border: 1px solid #FFF !important;
 padding: 6px 15px !important;
     }
+    .bordered-2{
+        border: 1px solid #0f0f0f !important;
+    }
     .hero-main{
         height: 550px !important;
     }
@@ -134,5 +137,81 @@ height: 302px !important;
     }
     .no-bg{
         background-image: none !important;
+    }
+}
+@media only screen and (max-width: 428px) {
+    .mobile-pad-nav{
+        padding: 15px 40px !important;
+        height: max-content !important;
+    }
+    .padding-40{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    .mobile-logo{
+        height: 15px !important;
+    }
+    .mobile-hero-title{
+        font-size: 24px !important;
+        width: 100% !important;
+    }
+    .mobile-hero-body{
+        font-size: 16px !important;
+    }
+    .mobile-hero-btn{
+        font-size: 16px !important;
+        padding: 6px 20px !important;
+    }
+    .flex-it-column{
+        
+        flex-direction: column !important;
+    }
+    .full-width{
+        width: 100% !important;
+    }
+    .vision-mobile-photo{
+        height: 248px !important;
+    }
+    .vision-mobile{
+        padding: 56px 0 !important;
+    }
+    .height-max{
+        height: max-content !important;
+    }
+    nav{
+        display: none !important;
+    }
+    .ham-icon{
+        display: block !important;
+    }
+    .gapping-20{
+        gap: 20px !important;
+    }
+    .play-height{
+        height: 239px !important;
+    }
+    .padding-0{
+        padding: 0 inherit !important;
+    }
+    .play-btn{
+        height: 38px !important;
+        width: 38px !important;
+    }
+    .padding-y-30{
+        padding: 30px 40px !important;
+       
+    }
+    .padding-b-30{
+        padding-bottom: 30px !important;
+    }
+    .founder-grid-2{
+        display: grid !important;
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+    .width-40{
+        width:110px !important;
+    }
+    .work-card{
+        height: 386px !important;
     }
 }
