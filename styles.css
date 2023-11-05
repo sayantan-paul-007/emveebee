@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@media only screen and (max-width: 1024px) {
+    .navbar{
+        padding: 0 80px !important;
+    }
+    .no-design{
+        display:none !important;
+    }
+    
+    nav{
+        width: 60% !important
+    }
+    .bordered{
+        border-radius: 22.5px !important;
+border: 1px solid #FFF !important;
+padding: 6px 15px !important;
+    }
+    .hero-main{
+        height: 550px !important;
+    }
+            .hero{
+         padding:0 80px !important;
+    }
+    .image-box{
+        width: 291px !important;
+height: 354px !important;
+    }
+    .vision-new{
+        padding:70px 0   !important;
+    }
+    .vision h3{
+        font-size: 28px !important;
+        text-transform: capitilize !important;
+        padding:0 !important;
+    }
+    .vision p{
+        font-size: 16px !important;
+    }
+    .play-over{
+        padding: 20px 80px !important;
+    }
+    .play{
+        height:516px !important;
+    }
+    .work-bg{
+        object-fit: contain !important;
+        height: 527px !important;
+    }
+    .work{
+        padding-top: 58px !important;
+    }
+    .work h3{
+        padding-bottom: 35px !important;
+        font-size: 28px !important;
+    }
+    .work p{
+        font-size: 16px !important;
+    }
+    .work-bg img{
+        width: 243px !important;
+height: 302px !important;
+    }
+    .name-bg{
+        height: max-content !important;
+        padding: 60px 0px 80px 0px !important;
+    }
+    .name-bg h3{
+        padding: 0 0 25px 0 !important;
+    }
+    .name-title{
+        font-size: 24px !important;
+    }
+    .name-para{
+        font-size: 16px !important;
+    }
+
+}
