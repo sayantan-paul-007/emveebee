@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @media only screen and (max-width: 1024px) {
-    .navbar{
+    .pad-80{
         padding: 0 80px !important;
     }
     .no-design{
@@ -18,9 +18,8 @@ padding: 6px 15px !important;
     .hero-main{
         height: 550px !important;
     }
-            .hero{
-         padding:0 80px !important;
-    }
+            
+    
     .image-box{
         width: 291px !important;
 height: 354px !important;
@@ -73,5 +72,67 @@ height: 302px !important;
     .name-para{
         font-size: 16px !important;
     }
-
+    .width-80{
+        width: 80% !important;
+    }
+    .values{
+        padding: 40px 80px !important;
+    }
+    .founder{
+        padding: 60px 0 !important;
+    }
+    .founder-grid{
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    .pad-down-35{
+        padding-bottom: 35px !important;
+    }
+    .card-flex{
+        display: flex !important;
+        gap: 20px !important;
+        flex-direction: row !important;
+        align-items: center;
+        text-align: left !important;
+        height: 217px !important;
+    }
+    
+    .card-wide{
+        width: 184px !important;
+        height: 184px !important;
+    }
+    .gap-extra{
+        gap: 30px !important;
+    }
+    .pad-80-both{
+        padding: 80px !important;
+    }
+    .font-14{
+        font-size: 14px !important;
+    }
+    .font-16{
+        font-size: 16px !important;
+    }
+    .hide-it-tab{
+        display: none !important;
+    }
+    .show-it-tab{
+        display: flex !important;
+    }
+    .text-20{
+        font-size: 20px !important;
+    }
+    .height-100{
+        height: 100% !important;
+    }
+    .height-163{
+        height: 163px !important;
+    }
+    .flex-it-center{
+        display: flex !important;
+        align-items: center !important;
+    }
+    .no-bg{
+        background-image: none !important;
+    }
 }
