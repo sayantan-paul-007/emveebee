@@ -15,11 +15,11 @@
 <body>
     <!-- Navbar -->
     <section class="p-4">
-        <div
-          class="flex flex-row items-center pad-80  px-[120px] h-[90px] justify-between rounded-[10px] bg-primary"
-        >
+      <div
+      class="flex flex-row items-center px-[120px] relative pad-80 mobile-pad-nav h-[90px] justify-between rounded-[10px] bg-primary"
+      >
           <div>
-            <img src="./assets/logo.png" alt="Emveebee logo" />
+            <a href="index.html"><img src="./assets/logo.png" class="mobile-logo" alt="Emveebee logo" /></a>
           </div>
           <nav class="flex flex-row items-center w-1/2 justify-between text-green-100">
             <a
@@ -48,9 +48,9 @@
             </svg>
             
           </div>
-          <div class="shadow-[4px_6px_0px_#0f0f0f] z-10 absolute ham-menu hidden right-10 top-10 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
+          <div class="shadow-[4px_6px_0px_#0f0f0f] ham-menu hidden z-10 absolute right-5 top-3 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
             <div class="p-[30px] border-[3px] relative rounded-[15px] "> 
-              <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-2 right-0" width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="absolute close -top-2 right-0" width="26" height="26" viewBox="0 0 26 26" fill="none">
                 <circle cx="13" cy="13" r="12.5" fill="white" stroke="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39646 6.08713C8.2793 5.96997 8.08935 5.96997 7.97219 6.08713L6.08797 7.97136C5.97081 8.08852 5.97081 8.27847 6.08797 8.39562L10.6405 12.9481L6.2363 17.3523C6.11914 17.4695 6.11914 17.6594 6.2363 17.7766L8.12053 19.6608C8.23769 19.778 8.42764 19.778 8.54479 19.6608L12.949 15.2566L17.2062 19.5138C17.3233 19.631 17.5133 19.631 17.6304 19.5138L19.5147 17.6296C19.6318 17.5124 19.6318 17.3225 19.5147 17.2053L15.2575 12.9481L19.663 8.54262C19.7801 8.42546 19.7801 8.23551 19.663 8.11835L17.7788 6.23412C17.6616 6.11697 17.4717 6.11697 17.3545 6.23412L12.949 10.6396L8.39646 6.08713Z" fill="#9D9C9C"/>
               </svg>
@@ -69,7 +69,7 @@
               <li class="text-center pb-2"><a class="text-lg text-primary" href="channels.html"
                 >CHANNELS</a
               ></li>
-              <li class="text-center pb-2"><a class="text-lg text-primary bordered-2 border-2  rounded-full  px-3 py-1" href="channels.html"
+              <li class="text-center pb-2"><a class="text-lg text-primary bordered-2 border-2  rounded-full  px-3 py-1" href="contact.html"
                 >CONTACT</a
               ></li>
              </ul>
@@ -79,17 +79,17 @@
       </section>
       <!-- Hero -->
       <section class="px-4 pb-[50px] font-poppins">
-        <div class="border-[3px]  border-primary rounded-[10px] relative hero-main flex-it-center h-[720px]">
+        <div class="border-[3px] height-max border-primary rounded-[10px] relative hero-main flex-it-center h-[720px]">
           <div class="absolute bottom-[80px] no-design right-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="1465" height="269" viewBox="0 0 1410 269" fill="none">
               <path d="M204.467 269.002C200.051 269.002 195.667 268.926 191.313 268.768C142.432 266.995 98.959 255.189 62.1065 233.672C38.1019 219.658 15.5774 200.861 -6.76016 176.213C-24.1062 157.071 -41.0306 134.88 -61.6485 104.253C-62.7072 102.675 -63.7706 101.093 -64.834 99.5113C-88.6183 64.0952 -113.207 27.4747 -151.746 11.2674C-186.821 -3.48696 -230.797 1.28298 -269.384 24.0239C-299.793 41.9422 -326.873 69.7828 -354.6 111.637L-357 110.055C-329.019 67.8232 -301.647 39.7006 -270.845 21.5529C-252.435 10.7034 -232.009 3.61538 -211.77 1.05835C-190.055 -1.68509 -168.91 0.929302 -150.63 8.61952C-111.301 25.1614 -86.4627 62.1452 -62.4485 97.9102C-61.385 99.497 -60.3215 101.074 -59.2628 102.651C-26.5253 151.283 11.0122 200.517 63.5532 231.196C131.529 270.88 224.807 276.874 326.201 248.058C378.881 233.089 430.023 210.831 479.484 189.304C511.728 175.271 545.074 160.756 578.592 148.367C626.779 130.554 670.151 119.518 711.176 114.629C759.899 108.822 805.015 112.12 845.273 124.432C876.281 133.914 905.68 149.108 934.111 163.8C967.874 181.25 1002.79 199.293 1040.29 207.609C1099.62 220.767 1167.28 210.405 1241.39 176.815C1253.04 171.538 1264.96 165.722 1276.49 160.096C1330.29 133.862 1385.91 106.733 1444.07 117.133C1483.24 124.135 1516.67 147.469 1549 170.028C1563.02 179.812 1577.51 189.93 1592.28 198.576C1676.08 247.652 1783.6 254.343 1872.86 216.04L1874 218.674C1835.17 235.335 1792.91 243.556 1750.63 243.561C1694.81 243.561 1638.95 229.232 1590.83 201.047C1575.96 192.339 1561.41 182.192 1547.35 172.375C1515.27 149.992 1482.1 126.845 1443.56 119.953C1386.33 109.72 1331.13 136.639 1277.75 162.668C1266.2 168.303 1254.26 174.129 1242.58 179.42C1208.22 194.991 1174.69 205.731 1142.94 211.328C1106.31 217.79 1071.56 217.474 1039.66 210.401C1001.8 202.003 966.719 183.874 932.789 166.338C904.473 151.704 875.194 136.572 844.435 127.166C770.701 104.616 684.072 112.43 579.593 151.044C546.152 163.404 512.844 177.9 480.633 191.918C431.086 213.483 379.853 235.78 326.991 250.802C284.467 262.884 243.317 268.988 204.463 268.988L204.467 269.002Z" fill="#7F7F7F"/>
             </svg>
           </div>
            
-          <div class="px-[120px] pad-80 gap-[15px] flex pt-[75px]">
-            <div class="shadow-[4px_6px_0px_#0f0f0f] w-1/2 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
+          <div class="px-[120px] padding-40 padding-y-30 pad-80 gap-[15px] flex-it-column flex pt-[75px]">
+            <div class="shadow-[4px_6px_0px_#0f0f0f] full-width w-1/2 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
                 <h4 class="font-bold text-4xl uppercase pb-[10px]">Get In Touch</h4>
-                <div class="border-[3px] border-primary rounded-[10px] p-[30px] no-bg bg-[url('./assets/location.png')] bg-no-repeat bg-[right_12rem_top]">
+                <div class="border-[3px] border-primary rounded-[10px] p-[30px] padding-20 no-bg bg-[url('./assets/location.png')] bg-no-repeat bg-[right_12rem_top]">
                   <h5 class="font-semibold text-2xl pb-[10px]">
                     OUR OFFICE, MUMBAI
                   </h5>
@@ -101,7 +101,7 @@ Email: contact@companyname.in <br>
                   </p>
                 </div>
             </div>
-            <div class="shadow-[4px_6px_0px_#0f0f0f] w-1/2 p-5 border-[3px] bg-neutral border-primary rounded-[20px]">
+            <div class="shadow-[4px_6px_0px_#0f0f0f] full-width w-1/2 p-5 border-[3px] bg-neutral border-primary rounded-[20px]">
               <div class="border-[3px] border-primary rounded-[10px] h-full">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4030.7248877194106!2d72.87469714297377!3d19.033983445431197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfeaf00d0a89%3A0x37c89f46838ea474!2sEMVEEBEE%20MEDIA%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1699049058152!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -138,18 +138,18 @@ Email: contact@companyname.in <br>
         </div>
       </section>
       <!-- Enquiry Form -->
-      <section class="bg-light-gray py-20 values px-[120px] font-poppins">
+      <section class="bg-light-gray py-20 values px-[120px] padding-40 font-poppins">
         <h5 class="text-4xl font-bold text-center pb-10">Enquire</h5>
-        <form action="" class="shadow-[4px_6px_0px_#0f0f0f] p-5 border-[3px] bg-neutral border-primary rounded-[20px]">
+        <form action="" class="shadow-[4px_6px_0px_#0f0f0f] padding-10 p-5 border-[3px] bg-neutral border-primary rounded-[20px]">
           <div class="border-[3px] rounded-[10px] p-[30px]">
-            <div class=" flex flex-col gap-[54px]">
-            <div class="flex flex-row gap-[100px]">
-              <input type="text" name="fname" placeholder="First Name" class="w-5/12 text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
-              <input type="text" name="lname" placeholder="Last Name" class="w-5/12 text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
+            <div class=" flex flex-col gapping-20 gap-[54px]">
+            <div class="flex flex-row flex-it-column gapping-20 gap-[100px]">
+              <input type="text" name="fname" placeholder="First Name" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
+              <input type="text" name="lname" placeholder="Last Name" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
             </div>
-            <div class="flex flex-row gap-[100px]">
-              <input type="email" name="email" placeholder="Email" class="w-5/12 text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
-              <input type="number" name="phone" placeholder="Phone Number" class="w-5/12 text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
+            <div class="flex flex-row flex-it-column gapping-20 gap-[100px]">
+              <input type="email" name="email" placeholder="Email" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
+              <input type="number" name="phone" placeholder="Phone Number" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
             </div>
             <div>
               <textarea name="message" class="resize-none border-[3px] border-primary pl-[15px] pt-[18px] rounded-[10px] placeholder-primary w-full h-[120px] text-base font-semibold" placeholder="Message" ></textarea>
@@ -163,5 +163,6 @@ Email: contact@companyname.in <br>
         </form>
       </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -8,7 +8,15 @@ const ott_button = document.querySelector('.ott-btn')
 const tv_button = document.querySelector('.tv-btn')
 const audio_button = document.querySelector('.audio-btn')
 const brand_button = document.querySelector('.brand-btn')
-
+const hamicon = document.querySelector('.ham-icon')
+const hammenu = document.querySelector('.ham-menu')
+const hamclose = document.querySelector('.close')
+hamicon.addEventListener('click', function () {
+    hammenu.classList.add('show-ham-menu')
+  })
+hamclose.addEventListener('click', function () { 
+    hammenu.classList.remove('show-ham-menu')
+ })
 film_button.addEventListener('click', function(){
     ott.classList.add("hidden");
     film.classList.remove('hidden');

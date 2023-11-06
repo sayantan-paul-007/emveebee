@@ -19,7 +19,8 @@
         class="flex flex-row items-center px-[120px] relative pad-80 mobile-pad-nav h-[90px] justify-between rounded-[10px] bg-primary"
       >
         <div>
-          <img src="./assets/logo.png" class="mobile-logo" alt="Emveebee logo" />
+          <a href="index.html"><img src="./assets/logo.png" class="mobile-logo" alt="Emveebee logo" /></a>
+          
         </div>
         <nav class="flex flex-row  w-1/2 items-center justify-between text-green-100">
           <a
@@ -36,11 +37,11 @@
           <a class="text-lg text-neutral" href="channels.html"
             >CHANNELS</a
           >
-          <a class="text-lg text-neutral" href="channels.html"
+          <a class="text-lg text-neutral" href="contact.html"
             >CONTACT</a
           >
         </nav>
-        <div class="ham-icon hidden">
+        <div class="ham-icon hidden" >
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
             <rect x="-0.000732422" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
             <rect x="-0.000732422" y="6" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
@@ -48,9 +49,9 @@
           </svg>
           
         </div>
-        <div class="shadow-[4px_6px_0px_#0f0f0f] ham-menu hidden z-10 absolute right-10 top-10 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
+        <div class="shadow-[4px_6px_0px_#0f0f0f] ham-menu hidden z-10 absolute right-5 top-3 p-5 border-[3px] bg-neutral border-primary  rounded-[20px]">
           <div class="p-[30px] border-[3px] relative rounded-[15px] "> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-2 right-0" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-2 right-0 close" width="26" height="26" viewBox="0 0 26 26" fill="none">
               <circle cx="13" cy="13" r="12.5" fill="white" stroke="black"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39646 6.08713C8.2793 5.96997 8.08935 5.96997 7.97219 6.08713L6.08797 7.97136C5.97081 8.08852 5.97081 8.27847 6.08797 8.39562L10.6405 12.9481L6.2363 17.3523C6.11914 17.4695 6.11914 17.6594 6.2363 17.7766L8.12053 19.6608C8.23769 19.778 8.42764 19.778 8.54479 19.6608L12.949 15.2566L17.2062 19.5138C17.3233 19.631 17.5133 19.631 17.6304 19.5138L19.5147 17.6296C19.6318 17.5124 19.6318 17.3225 19.5147 17.2053L15.2575 12.9481L19.663 8.54262C19.7801 8.42546 19.7801 8.23551 19.663 8.11835L17.7788 6.23412C17.6616 6.11697 17.4717 6.11697 17.3545 6.23412L12.949 10.6396L8.39646 6.08713Z" fill="#9D9C9C"/>
             </svg>
@@ -69,7 +70,7 @@
             <li class="text-center pb-2"><a class="text-lg text-primary" href="channels.html"
               >CHANNELS</a
             ></li>
-            <li class="text-center pb-2"><a class="text-lg text-primary" href="channels.html"
+            <li class="text-center pb-2"><a class="text-lg text-primary" href="contact.html"
               >CONTACT</a
             ></li>
            </ul>
@@ -237,13 +238,13 @@
     </section>
     <!-- Name grid -->
     <section
-      class="bg-[url('./assets/black-bg-2.png')] name-bg h-[773px] text-neutral bg-cover bg-no-repeat"
+      class="bg-[url('./assets/black-bg-2.png')] name-bg h-[773px] background-contain height-max text-neutral bg-cover bg-no-repeat"
     >
-      <div class="px-[120px] pad-80">
+      <div class="px-[120px] padding-40 pad-80">
         <h3 class="text-4xl font-bold py-[47px] text-center">
           Lets hear from our partners.
         </h3>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-4 gap-4 no-display-mobile">
           <div
             class="flex flex-col text-center border p-4 rounded-[20px] backdrop-blur-md gap-[10px]"
             style="
@@ -493,6 +494,195 @@
             </p>
           </div>
         </div>
+        
+<div id="controls-carousel" class="relative height-max w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-64 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+        class="flex flex-col text-center border p-4 rounded-[20px] backdrop-blur-md gap-[10px]"
+        style="
+          background: 'linear-gradient(90deg, rgba(22, 22, 22, 0.20) 0%, rgba(222, 222, 222, 0.15) 100%)';
+        "
+      >
+        <div class="flex flex-row justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="104"
+            height="104"
+            viewBox="0 0 104 104"
+            fill="none"
+          >
+            <circle
+              cx="52"
+              cy="52"
+              r="50.5"
+              fill="white"
+              stroke="#404040"
+              stroke-width="3"
+            />
+          </svg>
+        </div>
+
+        <p class="font-bold text-2xl name-title">Name goes here</p>
+        <p class="name-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          temporibus.
+        </p>
+      </div></div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <div
+        class="flex flex-col text-center border p-4 rounded-[20px] backdrop-blur-md gap-[10px]"
+        style="
+          background: 'linear-gradient(90deg, rgba(22, 22, 22, 0.20) 0%, rgba(222, 222, 222, 0.15) 100%)';
+        "
+      >
+        <div class="flex flex-row justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="104"
+            height="104"
+            viewBox="0 0 104 104"
+            fill="none"
+          >
+            <circle
+              cx="52"
+              cy="52"
+              r="50.5"
+              fill="white"
+              stroke="#404040"
+              stroke-width="3"
+            />
+          </svg>
+        </div>
+
+        <p class="font-bold text-2xl name-title">Name goes here</p>
+        <p class="name-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          temporibus.
+        </p>
+      </div></div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+        class="flex flex-col text-center border p-4 rounded-[20px] backdrop-blur-md gap-[10px]"
+        style="
+          background: 'linear-gradient(90deg, rgba(22, 22, 22, 0.20) 0%, rgba(222, 222, 222, 0.15) 100%)';
+        "
+      >
+        <div class="flex flex-row justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="104"
+            height="104"
+            viewBox="0 0 104 104"
+            fill="none"
+          >
+            <circle
+              cx="52"
+              cy="52"
+              r="50.5"
+              fill="white"
+              stroke="#404040"
+              stroke-width="3"
+            />
+          </svg>
+        </div>
+
+        <p class="font-bold text-2xl name-title">Name goes here</p>
+        <p class="name-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          temporibus.
+        </p>
+      </div></div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+          class="flex flex-col text-center border p-4 rounded-[20px] backdrop-blur-md gap-[10px]"
+          style="
+            background: 'linear-gradient(90deg, rgba(22, 22, 22, 0.20) 0%, rgba(222, 222, 222, 0.15) 100%)';
+          "
+        >
+          <div class="flex flex-row justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="104"
+              height="104"
+              viewBox="0 0 104 104"
+              fill="none"
+            >
+              <circle
+                cx="52"
+                cy="52"
+                r="50.5"
+                fill="white"
+                stroke="#404040"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+
+          <p class="font-bold text-2xl name-title">Name goes here</p>
+          <p class="name-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            temporibus.
+          </p>
+        </div></div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+        class="flex flex-col text-center border p-4 rounded-[20px] backdrop-blur-md gap-[10px]"
+        style="
+          background: 'linear-gradient(90deg, rgba(22, 22, 22, 0.20) 0%, rgba(222, 222, 222, 0.15) 100%)';
+        "
+      >
+        <div class="flex flex-row justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="104"
+            height="104"
+            viewBox="0 0 104 104"
+            fill="none"
+          >
+            <circle
+              cx="52"
+              cy="52"
+              r="50.5"
+              fill="white"
+              stroke="#404040"
+              stroke-width="3"
+            />
+          </svg>
+        </div>
+
+        <p class="font-bold text-2xl name-title">Name goes here</p>
+        <p class="name-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          temporibus.
+        </p>
+      </div></div>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
       </div>
     </section>
     <!-- Join Us Section -->
@@ -516,6 +706,8 @@
     </div>
         </div>
     </section>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

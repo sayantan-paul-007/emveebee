@@ -214,4 +214,26 @@ height: 302px !important;
     .work-card{
         height: 386px !important;
     }
+    .height-full{
+        height: 187px !important;
+    }
+    .padding-20{
+        padding: 20px !important;
+    }
+    .padding-10{
+        padding: 5px 10px !important;
+    }
+    .show-ham-menu{
+        display: block !important;
+
+    }
+    .no-display-mobile{
+        display: none !important;
+    }
+    .height-400{
+        height: 400px !important;
+    }
+    .background-contain{
+        object-fit: contain !important;
+    }
 }
