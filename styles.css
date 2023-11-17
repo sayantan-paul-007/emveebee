@@ -236,4 +236,7 @@ height: 302px !important;
     .background-contain{
         object-fit: contain !important;
     }
+    .carousel{
+        display: block;
+    }
 }
