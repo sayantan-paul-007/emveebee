@@ -81,3 +81,4 @@ brand_button.addEventListener('click', function(){
     tv_button.classList.remove('bg-neutral','text-primary')
     brand_button.classList.add('bg-neutral','text-primary')
 })
+// Form Validation

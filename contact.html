@@ -140,7 +140,7 @@ Email: contact@companyname.in <br>
       <!-- Enquiry Form -->
       <section class="bg-light-gray py-20 values px-[120px] padding-40 font-poppins">
         <h5 class="text-4xl font-bold text-center pb-10">Enquire</h5>
-        <form action="" class="shadow-[4px_6px_0px_#0f0f0f] padding-10 p-5 border-[3px] bg-neutral border-primary rounded-[20px]">
+        <form action="sendmail.php" method="post" class="contact-form shadow-[4px_6px_0px_#0f0f0f] padding-10 p-5 border-[3px] bg-neutral border-primary rounded-[20px]">
           <div class="border-[3px] rounded-[10px] p-[30px]">
             <div class=" flex flex-col gapping-20 gap-[54px]">
             <div class="flex flex-row flex-it-column gapping-20 gap-[100px]">
@@ -149,7 +149,7 @@ Email: contact@companyname.in <br>
             </div>
             <div class="flex flex-row flex-it-column gapping-20 gap-[100px]">
               <input type="email" name="email" placeholder="Email" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
-              <input type="number" name="phone" placeholder="Phone Number" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
+              <input type="tel" maxlength="10" name="phone" placeholder="Phone Number" class="w-5/12 full-width text-base font-semibold text-primary border-b-[3px] border-primary border-t-0 border-r-0 border-l-0 outline-none placeholder-primary">
             </div>
             <div>
               <textarea name="message" class="resize-none border-[3px] border-primary pl-[15px] pt-[18px] rounded-[10px] placeholder-primary w-full h-[120px] text-base font-semibold" placeholder="Message" ></textarea>
@@ -161,6 +161,7 @@ Email: contact@companyname.in <br>
           </div>
           
         </form>
+        
       </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
     <script src="./script.js"></script>
