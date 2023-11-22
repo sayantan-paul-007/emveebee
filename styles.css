@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .pad-80{
         padding: 0 80px !important;
     }
@@ -239,4 +239,4 @@ height: 302px !important;
     .carousel{
         display: block;
     }
-} */
+}
