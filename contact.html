@@ -149,16 +149,25 @@
       </div>
      
   </section>
+
   <!-- Enquiry form  -->
   <section class="py-10 px-[240px] max-laptop:px-[120px] max-mobile:py-[30px] max-tablet:px-[80px] max-mobile:px-4 bg-light-gray">
       <h4 class="text-center text-4xl max-tablet:text-[28px] max-mobile:text-lg text-primary font-bold pb-10 max-tablet:pb-9 max-mobile:pb-5">Enquire</h4>
-      <form action="sendmail.php" class="w-full shadow-neo-border max-tablet:shadow-neo-border-mobile border-[3px] max-mobile:border-[2px] rounded-[20px] p-5 max-mobile:p-6 bg-neutral">
+      <form  onsubmit="validateForm()" class="w-full shadow-neo-border max-tablet:shadow-neo-border-mobile border-[3px] max-mobile:border-[2px] rounded-[20px] p-5 max-mobile:p-6 bg-neutral">
           <div class="border-2 border-primary rounded-[10px] p-[30px]">
               <div class="grid grid-cols-2 gap-x-[103px] gap-y-[54px] max-tablet:gap-10 max-mobile:gap-[33px]">
-                  <input type="text" name="fname" id="fname" class=" max-mobile:col-span-2 border-t-0 border-r-0 border-l-0 border-b-2 pb-1 placeholder:text-lg placeholder:text-primary placeholder:font-semibold " placeholder="First Name" required>
-                  <input type="text" name="lname" id="lname" class=" max-mobile:col-span-2 border-2  border-t-0 border-r-0 border-l-0 pb-1 placeholder:text-lg placeholder:text-primary placeholder:font-semibold " placeholder="Last Name" required>
-                  <input type="email" name="email" id="email" class=" col-span-2 max-mobile:col-span-2 border-2  border-t-0 border-r-0 border-l-0 pb-1 placeholder:text-lg placeholder:text-primary placeholder:font-semibold " placeholder="Email" required>
-                  <textarea name="message" id="message" class="col-span-2 border rounded-[10px] placeholder:text-lg placeholder:text-primary placeholder:font-semibold px-[15px] pt-[18px] pb-[85px] max-mobile:col-span-2" placeholder="Message" required></textarea>
+                  <input type="text" name="fname" id="fname" 
+                  class=" max-mobile:col-span-2 border-t-0 border-r-0 border-l-0 border-b-2 pb-1 placeholder:text-lg placeholder:text-primary placeholder:font-semibold "
+                   placeholder="First Name" >
+                  <input type="text" name="lname" id="lname" 
+                  class=" max-mobile:col-span-2 border-2  border-t-0 border-r-0 border-l-0 pb-1 placeholder:text-lg placeholder:text-primary placeholder:font-semibold "
+                   placeholder="Last Name" >
+                  <input type="email" name="email" id="email" 
+                  class=" col-span-2 max-mobile:col-span-2 border-2  border-t-0 border-r-0 border-l-0 pb-1 placeholder:text-lg placeholder:text-primary placeholder:font-semibold "
+                   placeholder="Email" >
+                  <textarea name="message" id="message" 
+                  class="col-span-2 border rounded-[10px] placeholder:text-lg placeholder:text-primary placeholder:font-semibold px-[15px] pt-[18px] pb-[85px] max-mobile:col-span-2"
+                   placeholder="Message" r></textarea>
               </div>
               <div class="pt-9 max-mobile:pt-[33px]">
                   <button type="submit" class="bg-primary px-8 rounded-full py-[10px] max-mobile:px-4 max-mobile:py-[6px] text-lg max-mobile:text-base text-neutral font-medium"> Send</button>
@@ -166,6 +175,7 @@
           </div>
       </form>
   </section>
+  <script src="./formValidity.js"></script>
   <script src="./navscript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
     <script src="./script.js"></script>
