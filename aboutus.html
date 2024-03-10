@@ -12,32 +12,32 @@
      <!-- Navbar -->
      <section class="p-4 w-full">
       <div
-        class="flex flex-row items-center px-[160px] max-desktop:px-[120px] relative pad-80 h-[120px] max-desktop:h-[90px] justify-between rounded-[10px] bg-primary"
+        class="flex flex-row items-center px-[160px] max-laptop:px-[120px] relative h-[120px] max-laptop:h-[90px] max-mobile:h-[44px] max-tablet:px-[76px] justify-between max-mobile:px-[20px] max-tablet:text-lg rounded-[10px] bg-primary"
       >
         <div>
-          <a href="index.html"><img src="./assets/logo.png" class="h-8 max-desktop:h-[28px]" alt="Emveebee logo" /></a>
+          <a href="index.html"><img src="./assets/logo.png" class="h-8 max-mobile:h-4 max-laptop:h-[28px]" alt="Emveebee logo" /></a>
           
         </div>
-        <nav class="flex w-1/2 items-center justify-between text-xl">
+        <nav class="flex w-3/5 max-tablet:w-4/6 items-center justify-between text-xl max-mobile:hidden ">
           <a
-            class="text-[26px] max-desktop:text-lg text-neutral "
+            class="text-[26px] max-laptop:text-lg text-neutral border border-neutral rounded-full px-10 max-laptop:px-8 py-[18px] max-laptop:py-2"
             href="index.html"
             >HOME</a
           >
-          <a class="text-[26px] max-desktop:text-lg text-neutral border border-neutral rounded-full px-10 max-desktop:px-8 py-[18px] max-desktop:py-2" href="aboutus.html"
+          <a class="text-[26px] max-laptop:text-lg text-neutral" href="aboutus.html"
             >ABOUT US</a
           >
-          <a class="text-[26px] max-desktop:text-lg text-neutral" href="works.html"
-            >WORKS</a
+          <a class="text-[26px] max-laptop:text-lg text-neutral" href="portfolio.html"
+            >PORTFOLIO</a
           >
-          <a class="text-[26px] max-desktop:text-lg text-neutral" href="ip.html"
-            >IP</a
+          <a class="text-[26px] max-laptop:text-lg text-neutral" href="channels.html"
+            >CHANNELS</a
           >
-          <a class="text-[26px] max-desktop:text-lg text-neutral" href="contact.html"
+          <a class="text-[26px] max-laptop:text-lg text-neutral" href="contact.html"
             >CONTACT</a
           >
         </nav>
-        <div class="ham-icon hidden" >
+        <div class="ham-icon hidden max-mobile:flex" >
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
             <rect x="-0.000732422" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
             <rect x="-0.000732422" y="6" width="15" height="3" rx="0.3" fill="#D9D9D9"/>
@@ -53,18 +53,18 @@
             </svg>
            <ul class="list-none">
             <li class="text-center pb-2"> <a
-              class="text-lg text-primary"
+              class="text-lg text-primary bordered-2 border-2  rounded-full  px-3 py-1"
               href="index.html"
               >HOME</a
             ></li>
-            <li class="text-center pb-2"> <a class="text-lg text-primary bordered-2 border-2  rounded-full  px-3 py-1" href="aboutus.html"
+            <li class="text-center pb-2"> <a class="text-lg text-primary" href="aboutus.html"
               >ABOUT US</a
             ></li>
             <li class="text-center pb-2"> <a class="text-lg text-primary" href="works.html"
-              >WORKS</a
+              >PORTFOLIO</a
             ></li>
-            <li class="text-center pb-2"><a class="text-lg text-primary" href="ip.html"
-              >IP</a
+            <li class="text-center pb-2"><a class="text-lg text-primary" href="channels.html"
+              >CHANNELS</a
             ></li>
             <li class="text-center pb-2"><a class="text-lg text-primary" href="contact.html"
               >CONTACT</a
@@ -73,7 +73,8 @@
           </div>
           </div>
       </div>
-    </section>
+    </section> 
+      
  <!-- Hero Section -->
  <section class="bg-[url('./assets/hero-img.png')] bg-cover p-4 bg-no-repeat max-mobile:bg-[url('./assets/hero-img-mobile.png')]">
   <div class="h-[1004px] max-laptop:h-[753px] max-tablet:h-[573px] max-mobile:h-[701px] flex items-center  border-white border-2 p-4 rounded-[14px] max-laptop:rounded-[10px] ">
