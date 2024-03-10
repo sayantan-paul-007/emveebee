@@ -1,36 +1,44 @@
-function validateForm() {
-    let fname = document.getElementById('fname').value;
-    let lname = document.getElementById('lname').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
-    let valid = true;
-    if (fname === '') {
-      alert('Enter First Name');
-        valid = false;
-    }
-    if (lname === '') {
-        alert('Enter Last Name');
-        valid = false;
-    }
+const express = require('express');
+const bodyParser = require('body-parser');
+const xlsx = require('xlsx');
+const fs = require('fs');
 
-    if (email === '') {
-        emailError.innerHTML = 'Email is required';
-        valid = false;
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-        emailError.innerHTML = 'Invalid email address';
-        valid = false;
-    }
+const app = express();
 
-    if (message === '') {
-        alert('Enter a message');
-        valid = false;
-    } 
+// Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
 
-    if (valid) {
-         setTimeout(function () {
-            alert('Message Sent')
-        }, 2000);
+// Serve HTML form
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/contact.html');
+});
+
+// Handle form submission
+app.post('/submit', (req, res) => {
+    const { fname ,lname, email, message } = req.body;
+
+    // Read existing data from Excel file, if any
+    let data = [];
+    if (fs.existsSync('data.xlsx')) {
+        const workbook = xlsx.readFile('data.xlsx');
+        const sheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[sheetName];
+        data = xlsx.utils.sheet_to_json(worksheet);
     }
 
-    return false;
-}
+    // Append new data
+    data.push({ FirstName: fname,LastName: lname, Email: email, Message:message });
+
+    // Write data to Excel file
+    const newWorkbook = xlsx.utils.book_new();
+    const newWorksheet = xlsx.utils.json_to_sheet(data);
+    xlsx.utils.book_append_sheet(newWorkbook, newWorksheet, 'Sheet1');
+    xlsx.writeFile(newWorkbook, 'data.xlsx');
+
+    res.send('Data submitted successfully.');
+});
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});

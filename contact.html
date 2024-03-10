@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <title>EMVEEBEE Media Private Limited</title>
 </head>
@@ -86,7 +82,7 @@
              <h5 class="uppercase text-4xl max-mobile:text-[34px] font-bold pb-[10px]">
               Get In Touch
              </h5>
-             <div class="p-[30px] max-mobile:px-[20px] border-[3px] border-primary rounded-[10px] max-tablet:border-2">
+             <div class="p-[30px] max-mobile:px-[20px] border-[3px] border-primary h-[200px] rounded-[10px] max-tablet:border-2">
               <h6 class="text-2xl text-primary font-semibold max-tablet:text-xl pb-[11px] max-mobile:pb-5">OUR OFFICE, MUMBAI</h6>
               <p class="text-xl max-tablet:text-base">
                   B-118 J-1 BLOCK SHRAM SEVA PREMISES, Wadala Truck Terminal, Sion, Mumbai, Maharashtra 400037 
@@ -153,7 +149,7 @@
   <!-- Enquiry form  -->
   <section class="py-10 px-[240px] max-laptop:px-[120px] max-mobile:py-[30px] max-tablet:px-[80px] max-mobile:px-4 bg-light-gray">
       <h4 class="text-center text-4xl max-tablet:text-[28px] max-mobile:text-lg text-primary font-bold pb-10 max-tablet:pb-9 max-mobile:pb-5">Enquire</h4>
-      <form  onsubmit="validateForm()" class="w-full shadow-neo-border max-tablet:shadow-neo-border-mobile border-[3px] max-mobile:border-[2px] rounded-[20px] p-5 max-mobile:p-6 bg-neutral">
+      <form action="/submit" method="post" class="w-full shadow-neo-border max-tablet:shadow-neo-border-mobile border-[3px] max-mobile:border-[2px] rounded-[20px] p-5 max-mobile:p-6 bg-neutral">
           <div class="border-2 border-primary rounded-[10px] p-[30px]">
               <div class="grid grid-cols-2 gap-x-[103px] gap-y-[54px] max-tablet:gap-10 max-mobile:gap-[33px]">
                   <input type="text" name="fname" id="fname" 
@@ -170,14 +166,13 @@
                    placeholder="Message" r></textarea>
               </div>
               <div class="pt-9 max-mobile:pt-[33px]">
-                  <button type="submit" class="bg-primary px-8 rounded-full py-[10px] max-mobile:px-4 max-mobile:py-[6px] text-lg max-mobile:text-base text-neutral font-medium"> Send</button>
+                  <input type="submit" value="Submit" class="bg-primary px-8 rounded-full py-[10px] max-mobile:px-4 max-mobile:py-[6px] text-lg max-mobile:text-base text-neutral font-medium">
               </div>
           </div>
       </form>
   </section>
-  <script src="./formValidity.js"></script>
+  
   <script src="./navscript.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
-    <script src="./script.js"></script>
+   <script src="./script.js"></script>
 </body>
 </html>
