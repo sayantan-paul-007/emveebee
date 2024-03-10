@@ -12,7 +12,7 @@ tailwind.config = {
         poppins: ["Poppins", "sans-serif"],
       },
       screens: {
-        'tablet': '1201px',
+        'tablet': '1300px',
         'laptop': '1600px',
         'mobile': '429px',
         },
