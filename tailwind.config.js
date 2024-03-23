@@ -14,7 +14,7 @@ tailwind.config = {
       screens: {
         'tablet': '1380px',
         'laptop': '1600px',
-        'mobile': '429px',
+        'mobile': '750px',
         },
       boxShadow: {
        
